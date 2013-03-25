@@ -1,4 +1,4 @@
-luolab..github.com
+luolab.github.com
 ==================
 
 labpages
