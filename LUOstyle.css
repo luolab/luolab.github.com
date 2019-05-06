@@ -11,7 +11,7 @@ body {
 	font-weight: normal;
 }
 a {
-	color: rgb(192, 128, 0); text-decoration: none;一般带链接的字体的颜色
+	color: rgb(192, 128, 0); text-decoration: none; 
 }
 a.emph {
 	color: rgb(204, 0, 0); text-decoration: none;
@@ -26,7 +26,6 @@ a#toppy:hover {
 a:hover {
 	color: rgb(192, 128, 0);
 	text-decoration: underline;
-一般字体链接颜色
 }
 #horznav {
 	background: rgb(236, 92, 6); width: 960px; color: rgb(255, 255, 255); font-family: Verdana, Helvetica, Arial, Sans-serif; font-size: 11px;
@@ -40,6 +39,7 @@ a:hover {
 	width: 960px;
 	background-color: rgb(247, 247, 247);
 	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
 }
 #mainbody {
 	margin: 0px; padding: 0px; width: 960px; font-size: 11px;
@@ -62,14 +62,15 @@ a:hover {
 	background-color: white;
 	font-family: Verdana, Geneva, sans-serif;
 }
-#headergraphic { width:960; height=283;
-	
+#headergraphic { 
+	width: 960px;
+	height: 283px;	
 }
 #headernav {
 	text-align: center; color: rgb(255, 255, 255); clear: left; font-family: Verdana, Helvetica, Arial, Sans-serif; font-size: 15px; border-bottom-color: rgb(219, 219, 219); border-left-color: rgb(232, 232, 232); border-bottom-width: 0px; border-left-width: 1px; border-bottom-style: solid; border-left-style: solid;
 }
 #headernav ul {
-	background: rgb(30, 30, 30); list-style: none; margin: 0px; padding: 0px; width: 100%; height: 25px;导航条背景颜色
+	background: rgb(30, 30, 30); list-style: none; margin: 0px; padding: 0px; width: 100%; height: 25px;
 }
 #headernav ul li {
 	display: inline;
@@ -84,9 +85,40 @@ a:hover {
 	padding: 0px 25px; color: rgb(255, 255, 255); font-weight: normal; text-decoration: none; border-right-color: rgb(219, 219, 219); border-right-width: thin; border-right-style: solid;
 }
 #headernav ul li a:hover {
-	color: rgb(192, 128, 0);<！--导航条链接更改颜色
+	color: rgb(192, 128, 0);
 	text-decoration: underline;
 }
+
+#badge_topleft {
+	position: absolute ;
+	z-index: 2 ;
+	top: 10px ;
+	left: 10px;
+}
+
+#badge_topright {
+	position: absolute;
+	z-index: 2;
+	top: 10px;
+	left : 870px;
+}
+
+#badge_bottomleft {
+	position: absolute;
+	z-index: 2;
+	top: 193px;
+	left: 10px;
+}
+
+#badge_bottomright {
+	position: absolute;
+	z-index: 2;
+	top: 193px;
+	left : 870px;
+}
+
+
+
 #subnavarea {
 	margin: 0px; padding: 0px; width: 200px; float: left; display: inline;
 }
